@@ -53,7 +53,7 @@ function downCloudVer() {
 	writeLog 'Get whether to use Chinese mirror(读取是否使用中国镜像)'
 	proxy=$(uci get easyupdate.main.proxy)
 	if [ $proxy -eq 1 ]; then
-		proxy='https://mirror.ghproxy.com/'
+		proxy='https://ghp.ci/'
 		res='yes'
 	else
 		proxy=''
